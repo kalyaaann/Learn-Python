@@ -39,4 +39,4 @@ print(result.count("A"))
 
 resultlist=["C","D","A","A","B","B","A"]
 resultlist.sort()
-print(resultlist)
+print("The sorted grades :",resultlist)
