@@ -31,12 +31,12 @@ else:
 
 
 #WAP to count the numbers of students with grade "A" in the given tuple
-result=("C","D","A","A","B","B","A")
+result=("C","D","A","A","B","B","A","C")
 
 print(result.count("A"))
 
 #WAP that sorts the list of the above values and sorts them from A to D
 
-resultlist=["C","D","A","A","B","B","A"]
+resultlist=["C","D","A","A","B","B","A","C"]
 resultlist.sort()
 print("The sorted grades :",resultlist)
