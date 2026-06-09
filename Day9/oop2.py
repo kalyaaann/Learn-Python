@@ -58,7 +58,7 @@ print(car1.start())  #inherited from car class
 
 #multilevel inheritance  
 
-# class Car:
+class Car:
     @staticmethod
     def start():
         print("Car Started!")
@@ -100,7 +100,7 @@ class Car:
         print("car started..")
 
     @staticmethod
-    def stop():,
+    def stop():
         print("car stopped.")
 
 class ToyotaCar(Car):
@@ -117,7 +117,7 @@ print(car1.type)
 class Person:
     name="annonymous"
 
-    @classmethod,
+    @classmethod
     def changeName(cls,name):
         cls.name=name
 p1=Person()
