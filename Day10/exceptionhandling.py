@@ -8,9 +8,10 @@ except:
 list=[1,2,3,4,5]
 for i in list:
     print(i)
-
+#the blocks after try and except continues to run...
 
 #finally block
+
 try:
     a=int(input("Enter a number : "))
     b=7/a
@@ -23,6 +24,7 @@ finally:
 
 
 #more descriptive exceptions
+
 try:
     a=int(input("Enter a number : "))
     b=7/a
