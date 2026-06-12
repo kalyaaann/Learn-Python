@@ -34,3 +34,23 @@ print("Please select a operation:\n " \
       "5. Average\n") 
 
 select = int(input("Enter the number of operation you want to perform : ")) 
+
+#Logic for the operation 
+
+if select == 1:
+     print(number1, "+", number2, "= ",addition(number1, number2))
+     
+elif select == 2:
+     print(number1, "-", number2, "= ",subtraction(number1, number2)) 
+     
+elif select == 3:
+     print(number1, "*", number2, "= ", multiplication(number1, number2))
+     
+elif select == 4:
+     print(number1, "/", number2, "= ",  division(number1, number2))
+
+elif select == 5:
+     print("(",number1, "+", number2, ")", "/", "2", "= ",  average(number1, number2)) 
+    
+else:
+     print("Invalid operation! Check and enter the correct operation to perform!")
