@@ -163,4 +163,3 @@ for s in hsplit:
 vsplit = np.vsplit(c,2) # vertical split splits by row
 for s in vsplit:
     print(s)
-

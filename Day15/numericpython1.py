@@ -68,3 +68,19 @@ print(a+b)
 c = np.array([[1,2,3], [4,5,6]])
 d = np.array([10,20,30])
 print(c+d) 
+
+
+#handling nan and inf values
+data1 =  np.array([1,2, np.nan, 4, np.inf])
+print(data1)
+print(np.isnan(data1))
+print(np.isinf(data1))
+print(np.nan_to_num(data1)) 
+
+#save and load numpy array.
+arr = np.array([10,20,30,40,50])
+print(arr)
+np.save('my_array.npy', arr)
+
+loaded_arr = np.load('my_array.npy')
+print(loaded_arr)
