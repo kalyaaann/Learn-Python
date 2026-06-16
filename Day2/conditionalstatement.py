@@ -50,7 +50,7 @@ n= int(input("Enter a number"))
 if (n%2==0):
     print("Even Number")
 else:
-    print("Odd Number"
+    print("Odd Number")
 
 #greatest number between a b and c
 
