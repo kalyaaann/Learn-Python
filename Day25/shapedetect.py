@@ -8,7 +8,7 @@ contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_S
 
 #draw contours
 cv2.drawContours(image, contours,-1,(0,255,0),3)
-
+#to identify the corners and shape
 for contour in contours:
     approx=cv2.approxPolyDP(contour,0.01*cv2.arcLength(contour,True),True)
     corner=len(approx)
@@ -23,12 +23,12 @@ for contour in contours:
         shape_name="Circle"
     else:
         shape_name="Unknown"
-
+#draw contours and write the shape name
     cv2.drawContours(image,[approx],0,(0,255,0),2)
     x=approx.ravel()[0]
     y=approx.ravel()[0]-10
     cv2.putText(image,shape_name,(x,y),cv2.FONT_HERSHEY_COMPLEX,0.6,(255,0,0))
-
+#show image and save it 
 cv2.imshow("Contours image",image)
 cv2.imwrite("rect_detect.png",image)
 cv2.waitKey()
