@@ -11,6 +11,7 @@ contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_S
 cv2.drawContours(image, contours,-1,(0,255,0),3)
 
 cv2.imshow("Contours image",image)
+cv2.imwrite("contourtriangle.jpg",image)
 
 cv2.waitKey()
 cv2.destroyAllWindows()

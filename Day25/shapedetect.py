@@ -1,5 +1,5 @@
 import cv2
-image = cv2.imread("pentagon.png")
+image = cv2.imread("rectangle.png")
 gray_image= cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 _, thresh =cv2.threshold(gray_image,240,255,cv2.THRESH_BINARY)
 
@@ -30,5 +30,6 @@ for contour in contours:
     cv2.putText(image,shape_name,(x,y),cv2.FONT_HERSHEY_COMPLEX,0.6,(255,0,0))
 
 cv2.imshow("Contours image",image)
+cv2.imwrite("rect_detect.png",image)
 cv2.waitKey()
 cv2.destroyAllWindows()
